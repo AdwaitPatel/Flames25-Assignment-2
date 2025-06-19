@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-image: url('https://img.freepik.com/premium-photo/png-doodle-frame-transparent-background_53876-938721.jpg?semt=ais_hybrid&w=740');
+      background-size: cover;
+      color: white;
+      position: relative;
+    }
+
+    table {
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+
+    .days {
+      background-color: pink;
+    }
+
+    .time {
+      background-color: skyblue;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="overlay">
+    <h1 style="font-size: 60px;">School Timetable</h1>
+    <table border="5" cellpadding="30" cellspacing="10">
+      <tr>
+        <th class="time">Time</th>
+        <th class="days">Monday</th>
+        <th class="days">Tuesday</th>
+        <th class="days">Wednesday</th>
+        <th class="days">Thursday</th>
+        <th class="days">Friday</th>
+      </tr>
+      <tr>
+        <th class="time">07:00-08:30</th>
+        <td>Maths</td>
+        <td>Physics</td>
+        <td>Chemistry</td>
+        <td>Biology</td>
+        <td>Computer</td>
+      </tr>
+      <tr>
+        <th class="time">08:30-09:45</th>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Physics</td>
+        <td>Chemistry</td>
+        <td>Hindi</td>
+      </tr>
+      <tr>
+        <th class="time">09:45-10:30</th>
+        <td colspan="5">Break</td>
+      </tr>
+      <tr>
+        <th class="time">10:30-11:30</th>
+        <td>History</td>
+        <td>Geography</td>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Chemistry</td>
+      </tr>
+      <tr>
+        <th class="time">11:30-13:00</th>
+        <td>Sports</td>
+        <td>Computer Lab</td>
+        <td>Art & Craft</td>
+        <td>Biology</td>
+        <td>Moral Science</td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
