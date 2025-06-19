@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time Table</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Bubblegum+Sans&family=Moo+Lah+Lah&family=Pacifico&family=Savate:ital,wght@0,200..900;1,200..900&family=Titan+One&display=swap"
+    rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -12,14 +18,37 @@
       box-sizing: border-box;
       background-image: url('https://img.freepik.com/premium-photo/png-doodle-frame-transparent-background_53876-938721.jpg?semt=ais_hybrid&w=740');
       background-size: cover;
-      color: white;
+      color: black;
       position: relative;
+      font-family: "Bubblegum Sans", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 60px;
     }
 
     table {
       background-color: rgb(255, 255, 255);
       color: black;
     }
+
+    th,
+    td {
+      border: 2px solid black;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+
 
     .days {
       background-color: pink;
@@ -28,14 +57,13 @@
     .time {
       background-color: skyblue;
     }
-    
   </style>
 </head>
 
 <body>
   <div class="overlay">
-    <h1 style="font-size: 60px;">School Timetable</h1>
-    <table border="5" cellpadding="30" cellspacing="10">
+    <h1>School Timetable</h1>
+    <table cellpadding="30" cellspacing="10">
       <tr>
         <th class="time">Time</th>
         <th class="days">Monday</th>
@@ -62,7 +90,7 @@
       </tr>
       <tr>
         <th class="time">09:45-10:30</th>
-        <td colspan="5">Break</td>
+        <td colspan="5" style="background-color: rgb(97, 244, 202);">Break</td>
       </tr>
       <tr>
         <th class="time">10:30-11:30</th>
